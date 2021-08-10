@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/shape"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mainactivity_shape"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VirShot"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:text="True platform to get know how about shopping!"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/arrow_animation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:lottie_rawRes="@raw/arrowdown"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <Button
+        android:id="@+id/chatbot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow_animation"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="ChatBot"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/shopping_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/chatbot_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        app:lottie_rawRes="@raw/one"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+</RelativeLayout>
